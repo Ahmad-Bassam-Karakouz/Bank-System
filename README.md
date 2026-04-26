@@ -1,117 +1,52 @@
-#  Bank System 
-نظام إدارة بنكي بسيط يعمل عبر سطر الأوامر، مبني باستخدام لغة C++.
+# 💳 Bank System (C++ Console Application)
 
-يتيح البرنامج إدارة عملاء البنك وإجراء العمليات المصرفية الأساسية باستخدام ملف نصي كقاعدة بيانات.
+A simple Bank Management System built using C++  .
 
-تم إنشاء هذا المشروع لأغراض تعليمية، بهدف التدرب على التعامل مع الملفات، وهياكل البيانات، وتصميم تطبيقات سطر الأوامر باستخدام لغة C++.
+## 🎥 System Demo
 
+[![Bank System](https://github.com/user-attachments/assets/57b8cac8-3a61-4984-a3ed-7fe2b3b7c662)](https://github.com/user-attachments/assets/6168e263-710a-49ce-b190-f9e596fd0cd6)
 
----
+## 📸 Screenshots from code
 
-## الميزات
+<div>
 
-* عرض جميع العملاء
-* إضافة عميل جديد
-* حذف عميل
-* تحديث بيانات العميل
-* البحث عن عميل برقم الحساب
-* إيداع الأموال
-* سحب الأموال
-* عرض إجمالي أرصدة جميع العملاء
+<img width="500" height="400" alt="Image" src="https://github.com/user-attachments/assets/bb47c9db-3c23-4a25-88a1-1580e03651d2" />
 
+<img width="500" height="600" alt="Image" src="https://github.com/user-attachments/assets/620db7c3-6335-4d8b-b91f-ba55de68ec9e" />
 
----
+<img width="500" height="600" alt="Image" src="https://github.com/user-attachments/assets/76bab764-9234-414e-9743-8b067f4275d4" />
 
-## بنية بيانات العميل
+<img width="500" height="600" alt="Image" src="https://github.com/user-attachments/assets/4a41fd11-5e8e-46e9-aa86-794c417ee12f" />
 
-يحتوي كل عميل على المعلومات التالية:
+</div>
 
-* رقم الحساب
-* الرمز السري
-* اسم العميل
-* رقم الهاتف
-* الرصيد
+## 🚀 Features
 
-يتم تخزين جميع سجلات العملاء في ملف نصي باسم:
+* Secure Login System
+*  User Permissions
+* Full CRUD for Clients
+* Deposit & Withdraw operations
+* User Management System
 
-```
-clients.txt
-```
+🧠 Technologies Used
+* C++
+* STL (vector, string)
+* File Handling (fstream)
+* Bitmask Permissions
+* Console UI
 
-يتم فصل حقول البيانات باستخدام فاصل مخصص.
+⚙️ System Flow
 
+1- User logs in
 
----
+2- System checks permissions
 
-## التقنيات المستخدمة
+3- Main menu is displayed
 
-* **C++**
-* **STL (مكتبة القوالب القياسية)**
+4- User performs operations
 
-* متجهات
-* سلاسل نصية
-* **معالجة الملفات (fstream)**
-* **واجهة مستخدم سطر الأوامر**
+5- Data is saved in text files
 
----
-
-## القائمة الرئيسية للبرنامج
-
-```
-[1] عرض جميع العملاء
-[2] إضافة عميل جديد
-[3] حذف عميل
-[4] تحديث بيانات عميل
-[5] البحث عن عميل
-[6] المعاملات
-[7] خروج
-```
-
----
-
-## قائمة المعاملات
-
-```
-[1] إيداع
-[2] سحب
-[3] إجمالي الأرصدة
-[4] القائمة الرئيسية
-```
-
----
-
-## آلية عمل النظام
-
-1. يقرأ البرنامج بيانات العملاء من الملف `clients.txt`.
-
-2. تُخزَّن البيانات في الذاكرة باستخدام **المتجهات**.
-
-3. يُجري المستخدم العمليات من خلال قائمة سطر الأوامر. ٤. تُسجّل جميع التغييرات (إضافة، حذف، تحديث، إيداع، سحب) في الملف.
-
-
-
----
-
-
-## أهداف التعلم
-
-صُمم هذا المشروع للتدرب على:
-
-* التعامل مع الملفات في لغة C++
-* العمل مع **الهياكل**
-* استخدام **المتجهات** من مكتبة STL
-* تصميم **أنظمة CRUD**
-* بناء **تطبيقات سطر الأوامر**
-* تنظيم الكود في دوال قابلة لإعادة الاستخدام
-
----
-
-## التحسينات المستقبلية
-
-* إضافة **نظام تسجيل دخول**
-* تطبيق **أدوار المستخدمين (مدير / مستخدم)**
-* تخزين البيانات باستخدام **قاعدة بيانات بدلاً من ملف نصي**
-* إضافة **سجل المعاملات**
-* إنشاء **واجهة مستخدم رسومية** للنظام
-
----
+📂 Data Storage
+* clients.txt
+* users.txt
